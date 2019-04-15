@@ -2,6 +2,7 @@ import React from 'react';
 import './index.css';
 import request from 'request';
 import Administrador from '../Administrador';
+import Usuarios from '../Usuarios';
 
 
 class Admin extends React.Component{
@@ -39,7 +40,11 @@ class Admin extends React.Component{
                     this.setState({error: resp.data})
                 }
                 else if (resp.code === 'ok') {
-                    this.setState({datos: resp.data})
+                    const TOKEN = "token";
+                    this.setState({datos: resp.data});
+                    console.log(this.state.datos.token);
+                    const token = this.state.datos.token;
+                    sessionStorage.setItem(TOKEN, token)
                    
                 }
                 else if  (resp.code === 'E2'){
@@ -80,8 +85,11 @@ class Admin extends React.Component{
                             <p>Edad: {datos.edad}</p><br/>
                             <p>Como eres: {datos.comoeres}</p><br/>
                             <p>Email: {datos.email}</p><br/>
+                            <Usuarios/>
                         </div>
+                        
                     </div>
+                    
                 </div>)
             }
             

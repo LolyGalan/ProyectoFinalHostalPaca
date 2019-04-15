@@ -10,7 +10,8 @@ var usersRouter = require('./routes/users');
 var enviarroutes= require('./routes/enviarroutes');
 var mostrarroutes= require('./routes/mostrarroutes');
 var registraRouter = require('./routes/registrarroutes');
-var borradoroutes = require('./routes/borradoroutes')
+var borradoroutes = require('./routes/borradoroutes');
+var inscripcionroutes = require('./routes/incripcionroutes');
 const myDb = require('./config/mysql');
 
 var app = express();
@@ -32,6 +33,7 @@ app.use('/enviar',enviarroutes )
 app.use('/mostrar',mostrarroutes);
 app.use('/registrar', registraRouter);
 app.use('/borrar', borradoroutes);
+app.use('/inscripcion', inscripcionroutes);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

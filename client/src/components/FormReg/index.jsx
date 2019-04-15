@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import request from 'request';
+import Registro from '../Registro';
 class FormReg extends React.Component{
     constructor(props){
         super(props);
@@ -22,7 +23,7 @@ class FormReg extends React.Component{
         console.log(this.state)
     }
     
-       pedirDatos = e =>{
+       registrarDatos = e =>{
            console.log(this.state);
            //aquí tengo que poner los datos que meto al darle a enviar para mandarlos a la base de datos 
            const data = {
@@ -54,7 +55,25 @@ class FormReg extends React.Component{
                 }.bind(this))
         }
     render(){
-
+        const {datos, error} = this.state;
+        console.log(datos + "tenemos datos");
+            if (datos){
+                return(
+                    <div>
+                        <p>Enhorabuena!!!!, te has registrado correctamente</p><br/><br/>
+                        <Registro/>
+                    </div>
+                )
+            } 
+            else if (error){
+                return (
+                    <div>
+                        <p>Prueba de nuevo</p>
+                       
+                    </div>
+                )}
+            
+        
         return(
             <div>
                 <form>
@@ -64,7 +83,7 @@ class FormReg extends React.Component{
                         <label for="name">Nombre:</label>
                         <input type="text" id="name" name="nombre" onChange={this.handleChange}/>
 
-                        <label for="password">Password:</label>
+                        <label htmlfor="password">Password:</label>
                         <input type="password" id="password" name="contraseña" onChange={this.handleChange} />
                         
                         <label>Edad:</label>
@@ -79,7 +98,7 @@ class FormReg extends React.Component{
                         <label for="mail">Email:</label>
                         <input type="email" id="mail" name="email" onChange={this.handleChange}/>
                     </fieldset>
-                    <button type="button" onClick={this.pedirDatos}>Enviar</button>
+                    <button type="button" onClick={this.registrarDatos}>Enviar</button>
                 </form>
             </div>
     )

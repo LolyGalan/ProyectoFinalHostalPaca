@@ -9,6 +9,7 @@ import CrearTarea from '../../components/CrearTarea';
 import MuestraTareas from '../../components/MuestraTareas';
 import Borrar from '../../components/Borrar';
 import BorrarTareas from '../../components/BorrarTareas';
+import Usuarios from '../../components/Usuarios';
 
 const Routers = () => {
     return (
@@ -25,6 +26,7 @@ const Routers = () => {
             <Route path="/MuestraTareas" component={MuestraTareas}/>
             <Route path="/Borrar" component={Borrar}/>
             <Route path="/BorrarTareas" component={BorrarTareas}/>
+            <Route path="/Usuarios" component={Usuarios}/>
         </Switch>
     )
 }
