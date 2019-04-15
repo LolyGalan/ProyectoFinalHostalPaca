@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.imagen {
+  background-image: url('/images/loginfrutas2.jpg');
+  height: 100vh; 
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.container {
+  
+  text-align: center;
+  color:red;
+}
+a {
+  color: #00B7FF;
+}
+
+.portada{
+  color: red;
+  font-size: 50px;
+  text-align: center;
+}
+.casa {
+  font-size: 25px;
+  text-align: center;
+
+}
+.boton {
+  background-color: red;
+  text-align: center
+}
+.user{
+  color: green;
+}
+.submit{
+  background-color: green;
+}
+.fondo2 {
+  background : "images/paisaje.jpg";
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}

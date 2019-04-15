@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="stylesheets/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+      <form action="index.html" method="post">
+        <h1>Registro</h1>
+        <fieldset>
+          <legend><span class="number">1</span>Tus datos</legend>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name">
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email">
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+          
+          <label>Edad:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Entre 11 y 17</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Mayor de 17</label>
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Tu perfil</legend>
+          <label for="bio">Cuéntanos como eres:</label>
+          <textarea id="bio" name="user_bio"></textarea>
+        </fieldset>
+        <fieldset>
+        <label for="job">Preferencias de tareas:</label>
+        <select id="job" name="user_job">
+          <optgroup label="Tareas">
+            <option value="Agricultor">Agricultor</option>
+            <option value="Ganadero"> Ganadero</option>
+            <option value="Panadero">Panadero</option>
+            <option value="Cocinero"> Cocinero</option>
+            <option value="Montador y decorador">Montador y decorador</option>
+            <option value="Artista">Artista</option>
+          </optgroup>
+        </select>
+          <label>Te gustaria:</label>
+          <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="La música">La música</label><br>
+            <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="Hacer">Hacer</label><br>
+          <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="Vivir en el campo">Vivir en el campo</label>
+        
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+      
+    </body>
+</html>
