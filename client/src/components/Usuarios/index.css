@@ -2,25 +2,31 @@
 
 
 #1{
-width:50%;
-height:50%;
-float:left;
+    width:50%;
+    height:50%;
+    float:left;
+    }
+    #2{
+    width:50%;
+    height:50%;
+    float:right;
+    }
+    #3{
+    width:50%;
+    height:50%;
+    float:left;
+    }
+    #4{
+    width:50%;
+    height:50%;
+    float:right;
+    }
+.card-img-top{
+   width:100%;
 }
-#2{
-width:50%;
-height:50%;
-float:right;
-}
-#3{
-width:50%;
-height:50%;
-float:left;
-}
-#4{
-width:50%;
-height:50%;
-float:right;
-}
+    .card-img-top2{
+       width:150px;
+    }
 
 
 

@@ -1,11 +1,11 @@
-var express = require('express');
+/*var express = require('express');
 var router = express.Router();
-const mostrarcontroller = require("../controllers/mostrarcontroller");
+const contarcontroller = require("../controllers/contarcontroller");
 
 
 router.get('/mostrar', function(req, res, next) {
     res.render('mostrar', { title: 'mostrar actividades' });
   });
-router.post('/', mostrarcontroller.MostrarTareas);
+router.post('/', contarcontroller.contadorIns);
 
-module.exports = router;
+module.exports = router;*/

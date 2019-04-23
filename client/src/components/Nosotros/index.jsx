@@ -1,12 +1,12 @@
 import React from 'react';
-import './index.css';
-
+import '../Nosotros/index.css';
+import pergamino from '../Nosotros/pergamino.jpg';
 class Nosotros extends React.Component {
 
     render(){
         return(
             <div>
-                <p>Somos los mejores</p>
+                <img src={pergamino} alt="..." className="pergamino"/>
             </div>
         )
     }

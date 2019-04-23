@@ -1,9 +1,9 @@
 import React from 'react';
 //import {datos} from '../../datos';
-import casita from '../Administrador/CasaPaca.jpg';
+//import casita from '../Administrador/CasaPaca.jpg';
 import request from 'request';
 
-import './index.css';
+import '../MuestraTareas/index.css';
 import {Link, Redirect} from 'react-router-dom';
 
 

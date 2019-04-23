@@ -12,6 +12,8 @@ var mostrarroutes= require('./routes/mostrarroutes');
 var registraRouter = require('./routes/registrarroutes');
 var borradoroutes = require('./routes/borradoroutes');
 var inscripcionroutes = require('./routes/incripcionroutes');
+var comentarroutes = require('./routes/comentarroutes');
+var tomasroutes = require('./routes/tomasroutes');
 const myDb = require('./config/mysql');
 
 var app = express();
@@ -30,10 +32,12 @@ app.use('/', indexRouter);
 app.use('/login', loginRouter);
 app.use('/users', usersRouter);
 app.use('/enviar',enviarroutes )
-app.use('/mostrar',mostrarroutes);
+//app.use('/mostrar',mostrarroutes);
 app.use('/registrar', registraRouter);
 app.use('/borrar', borradoroutes);
 app.use('/inscripcion', inscripcionroutes);
+app.use('/comentar', comentarroutes);
+app.use('/tomas', tomasroutes);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

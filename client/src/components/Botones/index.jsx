@@ -19,8 +19,8 @@ function ContainedButtons(props) {
       <Button variant="contained" color="secondary" href="Nosotros" className={classes.button}>
         Nosotros
       </Button>
-      <Button variant="contained" color="secondary" href="fotos"className={classes.button}>
-        Fotos
+      <Button variant="contained" color="secondary" href="horario"className={classes.button}>
+        Nuestro día
       </Button>
       <Button variant="contained" color="secondary" href="registro" className={classes.button}>
         Acceso

@@ -1,6 +1,6 @@
 import React from 'react';
 //import {datos} from '../../datos';
-import casita from '../Administrador/CasaPaca.jpg';
+
 import {Link} from 'react-router-dom';
 class BorrarTarea extends React.Component{
     constructor(props){

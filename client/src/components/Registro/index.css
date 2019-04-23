@@ -1,4 +1,29 @@
 .boton {
     margin-left: 350px;
-
-}
+ 
+ }
+ .boton2 {
+    margin-left: 650px;
+ 
+ }
+ .boton3 {
+    margin-left: 950px;
+ 
+ }
+ .imagen {
+    width:250px;
+    display: block;
+    margin: auto;
+ }
+ h4{
+  text-align: center;
+ }
+ .turquesa{
+    color:rgb(121, 58, 223);
+ }
+ .rojo{
+ color:red;
+ }
+ .card-deck{
+    margin-top: 100px;
+ }

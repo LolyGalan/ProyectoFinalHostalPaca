@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import '../Admin/index.css';
 import request from 'request';
 import Administrador from '../Administrador';
 import Usuarios from '../Usuarios';
@@ -65,9 +65,7 @@ class Admin extends React.Component{
                         </div>
                         <div className= "card-body">
                             <div className="card text-center border-info">
-                                <p>Tienes : {datos.edad}</p><br/>
-                                <p>Eres: {datos.comoeres}</p><br/>
-                                <p>Email: {datos.email}</p><br/>
+                                <p>Email: {datos.email}</p>
                                 <Administrador/>
                             </div>
                         </div>
@@ -78,18 +76,17 @@ class Admin extends React.Component{
                 return (
                 <div>
                     <div className= "card-header">
-                         <h1>Nombre de usuario: {datos.nombre}</h1>
-                     </div>
-                     <div className= "card-body">
-                        <div className="card text-center border-info">
-                            <p>Edad: {datos.edad}</p><br/>
-                            <p>Como eres: {datos.comoeres}</p><br/>
-                            <p>Email: {datos.email}</p><br/>
-                            <Usuarios/>
-                        </div>
-                        
+                        <h1>Nombre de usuario: {datos.name}</h1>
                     </div>
-                    
+                    <div className= "card-body">
+                       <div className="card text-center border-info">
+                           <p> {datos.name}</p>
+                           <p>{datos.edad} años</p>
+                           <p>Eres {datos.comoeres}</p>
+                           <p>Tu email: {datos.email}</p>
+                           <Usuarios/>
+                       </div>
+                   </div>
                 </div>)
             }
             
@@ -112,5 +109,4 @@ class Admin extends React.Component{
         )
     }
 }
-
     export default Admin;

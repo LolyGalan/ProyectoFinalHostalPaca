@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import '../FormReg/index.css';
 import request from 'request';
 import Registro from '../Registro';
 class FormReg extends React.Component{
@@ -60,7 +60,7 @@ class FormReg extends React.Component{
             if (datos){
                 return(
                     <div>
-                        <p>Enhorabuena!!!!, te has registrado correctamente</p><br/><br/>
+                        <h5>Enhorabuena!!!!, te has registrado correctamente</h5><br/><br/>
                         <Registro/>
                     </div>
                 )

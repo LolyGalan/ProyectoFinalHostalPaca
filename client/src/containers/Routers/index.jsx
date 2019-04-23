@@ -10,6 +10,9 @@ import MuestraTareas from '../../components/MuestraTareas';
 import Borrar from '../../components/Borrar';
 import BorrarTareas from '../../components/BorrarTareas';
 import Usuarios from '../../components/Usuarios';
+import Horario from '../../components/Horario';
+import Comentarios from '../../components/Comentarios';
+import TotalTomasDolar from '../../components/TotalTomasDolar';
 
 const Routers = () => {
     return (
@@ -20,6 +23,7 @@ const Routers = () => {
             component={Portada}/>
             <Route path="/Registro" component={Registro}/>
             <Route path="/Nosotros" component={Nosotros}/>
+            <Route path="/Horario" component={Horario}/>
             <Route path="/FormReg" component={FormReg}/>
             <Route path="/Admin" component={Admin}/>
             <Route path="/Creartarea" component={CrearTarea}/>
@@ -27,6 +31,8 @@ const Routers = () => {
             <Route path="/Borrar" component={Borrar}/>
             <Route path="/BorrarTareas" component={BorrarTareas}/>
             <Route path="/Usuarios" component={Usuarios}/>
+            <Route path="/Comentarios" component={Comentarios}/>
+            <Route path="/TotalTomasDolar" component={TotalTomasDolar}/>
         </Switch>
     )
 }

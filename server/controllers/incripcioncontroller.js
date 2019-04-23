@@ -5,8 +5,8 @@ function Inscripcion (req, res) {
     model.inscribirUser({
         id_user: req.userId,
         id_actividad: req.body.idTarea
-    })// 1 - buscar al usuario en la base de datos
-    //buscamos en la base de datos el nombre que le hemos metido por formulario
+    })
+    
     .then( result => {
       console.log("resultados " + JSON.stringify(result));
       if (result) {

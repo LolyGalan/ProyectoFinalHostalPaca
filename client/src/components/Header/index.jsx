@@ -1,6 +1,6 @@
 import React from 'react';
 import Botones from '../Botones';
-import  './index.css';
+import  '../Header/index.css';
 class Header extends React.Component {
     render(){
         return (

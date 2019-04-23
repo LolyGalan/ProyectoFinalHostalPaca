@@ -11,4 +11,7 @@ p{
 .titulo{
     margin-left: 150px;
 }
-
+.card-img-top{
+    width:600px;
+    height:350px;
+   }
